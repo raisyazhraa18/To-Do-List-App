@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Caprasimo&family=Fraunces:opsz,wght@9..144,700&family=Lilita+One&family=Montserrat+Alternates:wght@700&family=Oswald&family=Playfair+Display&family=Prompt&family=Quicksand:wght@300&family=REM:wght@300&family=Roboto+Condensed:wght@700&family=Signika+Negative&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #FFC6AC;
+    background: linear-gradient(125deg, #241468 0%, #D5FFE4 97%);
+}
+
+.container {
+    padding: 16px;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+}
+
+.addPlan {
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+
+.addPlan > input[type="text"] {
+    width: 90%;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.addPlan button {
+    margin: 0 10px;
+    color: black;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.addPlan button:hover {
+    background-color: #445069;
+    color: white;
+}
+
+.notFinished {
+    margin: 5px 0;
+    padding: 20px;
+}
+
+.Finished {
+    margin: 5px 0;
+    padding: 20px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: item-counter;
+}
+
+h3 {
+    font-size: 35px;
+    text-align: center;
+    color: #322653;
+    font-family: 'Lilita One', cursive;
+}
+
+ol li {
+    width: 100%;
+    padding: 16px;
+    margin: 5px 0;
+    background: #EF6262;
+    font-size: 26px;
+    counter-increment: item-counter;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bold;
+}
+
+ol.Finished li {
+    background: #CBFFA9;
+}
+
+ol li::before {
+    content: counter(item-counter);
+    background: #B31312;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+    margin-right: 1rem;
+    color: #F3BCC8;
+}
+
+ol.Finished li::before {
+    background: #8EAC50;
+    color: #17594A;
+    font-weight: bold;
+}
+
+li button {
+    float: right;
+    padding: 6px;
+    font-size: 20px;
+    margin-right: 18px;
+    background: none;
+    cursor: pointer;
+}
+
+
+
